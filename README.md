@@ -1,4 +1,8 @@
-Chitter Challenge
+
+As a Maker
+So that I can let people know what I am doing  
+I want to post a message (peep) to chitter
+<!-- Chitter Challenge
 =================
 
 * Challenge time: rest of the day and weekend, until Monday 9am
@@ -121,4 +125,4 @@ SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
 SimpleCov.start
 ```
 
-You can see your test coverage when you run your tests. If you want this in a graphical form, uncomment the `HTMLFormatter` line and see what happens!
+You can see your test coverage when you run your tests. If you want this in a graphical form, uncomment the `HTMLFormatter` line and see what happens! -->
