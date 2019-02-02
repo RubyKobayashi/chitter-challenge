@@ -1,7 +1,30 @@
 
+Creating Database peeps_test:
+Connect to psql
+Create the database using the psql command CREATE DATABASE peeps;
+Connect to the database using the pqsl command \c peeps;
+Run the query we have saved in the file 02_create_peeps_test_table.sql
+
+
+Creating Database peeps:
+
+Connect to psql
+Create the database using the psql command CREATE DATABASE peeps;
+Connect to the database using the pqsl command \c peeps;
+Run the query we have saved in the file 01_create_peeps_table.sql
+
+
+User stories
+
+User story 1
 As a Maker
 So that I can let people know what I am doing  
 I want to post a message (peep) to chitter
+
+User story 2
+As a maker
+So that I can see what others are saying  
+I want to see all peeps in reverse chronological order
 <!-- Chitter Challenge
 =================
 

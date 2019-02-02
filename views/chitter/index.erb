@@ -1,2 +1,24 @@
 
-<h1> <%= @peep %> ! </h1>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to Chitter!</title>
+</head>
+
+<body>
+
+<ul>
+  <% @peeps.each do |peep| %>
+    <li class="peep" id="peep-<%= peep.id %>">
+        <%= peep.peep %>
+      
+    </li>
+<% end %>
+</ul>
+
+
+</body>
+
+
+
+</html>

@@ -1,3 +1,5 @@
+require 'pg'
+
 feature 'Posting a message' do
   scenario 'posting a peep to Chitter' do
     visit('/chitter/new')

@@ -8,7 +8,7 @@ class Chitter < Sinatra::Base
   end
 
   get '/chitter' do
-    @peep = session[:peep]
+    @peeps = Peep.all
     erb :'chitter/index'
   end
 
@@ -17,7 +17,8 @@ class Chitter < Sinatra::Base
   end
 
   post '/chitters' do
-    session[:peep] = params[:peep]
+    # p params[:peep]
+    Peep.create(peep: params[:peep])
     redirect '/chitter'
   end
 
