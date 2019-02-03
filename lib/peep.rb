@@ -1,10 +1,12 @@
 require 'pg'
 
+
 class Peep
 
-  attr_reader :peep, :id
+  attr_reader :id, :peep
 
-  def initialize(peep:, id:)
+  def initialize(id:, peep:)
+    @id = id
     @peep = peep
   end
 

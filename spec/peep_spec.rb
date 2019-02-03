@@ -1,8 +1,10 @@
 require 'peep'
 
+
+
 RSpec.describe Peep do
   describe '.all' do
-    it 'returns a list of peeps in reverse chronological order' do
+    it 'returns a list of peeps' do
       connection = PG.connect(dbname: 'peeps_test')
       peep = Peep.create(peep: 'This is my first peep')
       Peep.create(peep: 'This is my second peep')
@@ -14,6 +16,8 @@ RSpec.describe Peep do
       # expect(peeps.last.id).to eq peeps.first.id
       expect(peeps.last.peep).to eq 'This is my first peep'
       expect(peeps.first.peep).to eq 'This is my third peep'
+
+    
     end
   end
 end
